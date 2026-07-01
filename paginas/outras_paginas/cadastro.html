@@ -31,9 +31,8 @@
             <input type="radio" name="sexo" id="sxM" class="input-radio" required value="M"> Masculino
             <input type="radio" name="sexo" id="sxND" class="input-radio" required value="N" > Não Declarar
 
-            
-
-            <select name="estado" id="estado" class="input-txt02" required>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado" required >
                 <option> Selecione o Estado </option>
                 <option value="AL">Alagoas</option>
                 <option value="BA">Bahia</option>
@@ -43,15 +42,15 @@
                 <option value="RN">Rio Grande do Norte</option>
                 <option value="CE">Ceara</option>
                 <option value="PI">Piaúi</option>
-                <option value="SE">Sergipe</option>
+                <option value="SE" selected>Sergipe </option>
 
             </select>
 
             <label for="preferencias">Preferências</label>
-            <input type="checkbox" name="estado" class="input-check" id="estado" value="estado">Estudo
-            <input type="checkbox" name="viagem" class="input-check" id="viagem" value="viagem">Viagem
-            <input type="checkbox" name="trabalho" class="input-check" id="trabalho" value="trabalho">Trabalho
-            <input type="checkbox" name="compras" class="input-check" id="compras" value="compras">Compras
+            <input type="checkbox" name="estado"  id="estado" value="estado">Estudo
+            <input type="checkbox" name="viagem"  id="viagem" value="viagem">Viagem
+            <input type="checkbox" name="trabalho" id="trabalho" value="trabalho">Trabalho
+            <input type="checkbox" name="compras"  id="compras" value="compras">Compras
 
             <label for="comentario">Comentário</label>
             <textarea name="comentario" id="comentario" placeholder="Digite seu comentário"></textarea>
@@ -65,10 +64,12 @@
             <label for="quantidade">Quantidade</label>
             <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" >
 
-            <button type="submit" id="btn-enviar" class="btn">Enviar</button>
-            <button type="reset" id="btn-limpar" class="btn">Limpar</button>
-            <button id="btn" class="btn">Botão</button>
-
+            <div id="div-btns">
+            <button type="submit" id="btn-enviar" >Enviar</button>
+            <button type="reset" id="btn-limpar" >Limpar</button>
+            <button id="div-btns" >Botão</button>
+            
+        </div>
         </form>
 </body>
 </html>
